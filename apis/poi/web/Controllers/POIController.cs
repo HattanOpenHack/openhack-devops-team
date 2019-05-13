@@ -22,8 +22,9 @@ namespace poi.Controllers
         [Produces("application/json", Type = typeof(POI))]
         public List<POI> GetAll()
         {
-            return _context.POIs.ToList();
-        }
+            return _context.POIs.ToList(
+         
+        
 
         [HttpGet("{ID}", Name = "GetPOIById")]
         [Produces("application/json", Type = typeof(POI))]
